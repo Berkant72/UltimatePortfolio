@@ -8,19 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    // @AppStorage("selectedView") var selectedView: String? // AppStorage stores the same value in each instance in the whole app
+    
+    @SceneStorage("selectedView") var selectedView: String? // SceneStorage stores the value in each instance of the scene
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selectedView) {
             HomeView()
+                .tag(HomeView.tag)
                 .tabItem {
                     Image(systemName: "house")
                     Text("Home")
                 }
             ProjectsView(showClosedProjects: false)
+                .tag(ProjectsView.openTag)
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Open")
                 }
             ProjectsView(showClosedProjects: true)
+                .tag(ProjectsView.closedTag)
                 .tabItem {
                     Image(systemName: "checkmark")
                     Text("Closed")
