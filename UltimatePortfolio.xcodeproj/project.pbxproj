@@ -23,6 +23,7 @@
 		1ED3E39F259726D5002039FC /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E39E259726D5002039FC /* Binding-OnChange.swift */; };
 		1ED3E3A22597330B002039FC /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E3A12597330B002039FC /* ProjectHeaderView.swift */; };
 		1ED3E3A925974D00002039FC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED3E3A825974D00002039FC /* Colors.xcassets */; };
+		1ED3E3AC25974F03002039FC /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E3AB25974F03002039FC /* EditProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		1ED3E39E259726D5002039FC /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		1ED3E3A12597330B002039FC /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		1ED3E3A825974D00002039FC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1ED3E3AB25974F03002039FC /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				1E4D119125952BBE00470FBA /* UltimatePortfolio.entitlements */,
 				1E145E852595282E0005E567 /* UltimatePortfolioApp.swift */,
 				1E145E872595282E0005E567 /* ContentView.swift */,
+				1ED3E3AB25974F03002039FC /* EditProjectView.swift */,
 				1ED3E39825971814002039FC /* EditItemView.swift */,
 				1ED3E3A12597330B002039FC /* ProjectHeaderView.swift */,
 				1ED3E39B25971827002039FC /* ItemRowView.swift */,
@@ -190,6 +193,7 @@
 				1ED3E3A22597330B002039FC /* ProjectHeaderView.swift in Sources */,
 				1E4D118F25952B6400470FBA /* DataController.swift in Sources */,
 				1ED3E395259601B3002039FC /* Project-CoreDataHelpers.swift in Sources */,
+				1ED3E3AC25974F03002039FC /* EditProjectView.swift in Sources */,
 				1E145E97259528480005E567 /* Main.xcdatamodeld in Sources */,
 				1ED3E39C25971827002039FC /* ItemRowView.swift in Sources */,
 				1E4D118925952AEE00470FBA /* HomeView.swift in Sources */,
