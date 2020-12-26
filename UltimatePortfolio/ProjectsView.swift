@@ -20,14 +20,14 @@ struct ProjectsView: View {
         
         projects = FetchRequest<Project>(entity: Project.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)], predicate: NSPredicate(format: "closed = %d", showClosedProjects))
     }
-
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section(header: Text(project.title ?? "")) {
                         ForEach(project.projectItems) { item in
-                            Text(item.itemTitle)
+                           ItemRowView(item: item)
                         }
                     }
                 }
