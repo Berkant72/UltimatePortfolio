@@ -20,6 +20,11 @@ struct UltimatePortfolioApp: App {
             ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext) // used for SwiftUI to read CoreData values
                 .environmentObject(dataController) // for our own code to read CoreData values
+                .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save) // save changes to CoreData when application no longer active
         }
+    }
+    
+    func save(_ note: Notification) {
+        dataController.save()
     }
 }
