@@ -24,6 +24,7 @@
 		1ED3E3A22597330B002039FC /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E3A12597330B002039FC /* ProjectHeaderView.swift */; };
 		1ED3E3A925974D00002039FC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED3E3A825974D00002039FC /* Colors.xcassets */; };
 		1ED3E3AC25974F03002039FC /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E3AB25974F03002039FC /* EditProjectView.swift */; };
+		1ED3E3B12598C34C002039FC /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E3B02598C34C002039FC /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		1ED3E3A12597330B002039FC /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		1ED3E3A825974D00002039FC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1ED3E3AB25974F03002039FC /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		1ED3E3B02598C34C002039FC /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				1ED3E39B25971827002039FC /* ItemRowView.swift */,
 				1E4D118825952AEE00470FBA /* HomeView.swift */,
 				1E4D118B25952B4300470FBA /* ProjectsView.swift */,
+				1ED3E3B02598C34C002039FC /* Sequence-Sorting.swift */,
 				1ED3E39E259726D5002039FC /* Binding-OnChange.swift */,
 				1E4D118E25952B6400470FBA /* DataController.swift */,
 				1ED3E391259600FE002039FC /* Item-CoreDataHelpers.swift */,
@@ -198,6 +201,7 @@
 				1ED3E39C25971827002039FC /* ItemRowView.swift in Sources */,
 				1E4D118925952AEE00470FBA /* HomeView.swift in Sources */,
 				1ED3E39F259726D5002039FC /* Binding-OnChange.swift in Sources */,
+				1ED3E3B12598C34C002039FC /* Sequence-Sorting.swift in Sources */,
 				1E145E882595282E0005E567 /* ContentView.swift in Sources */,
 				1E145E862595282E0005E567 /* UltimatePortfolioApp.swift in Sources */,
 				1ED3E392259600FE002039FC /* Item-CoreDataHelpers.swift in Sources */,
