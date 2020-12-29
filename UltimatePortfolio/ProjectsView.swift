@@ -29,39 +29,48 @@ struct ProjectsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(projects.wrappedValue) { project in
-                    Section(header: ProjectHeaderView(project: project)) {
-                        ForEach(project.projectItems(using: sortOrder)) { item in
-                           ItemRowView(item: item)
-                        }
-                        .onDelete { offsets in
-                            let allItems = project.projectItems
+            // For better result in larger iPhone's in landscape mode or for iPad's macOS, the Group shows if List is empty a text.
+            // For the secondary View with NavigationView a View at the end with text.
+            Group {
+                if projects.wrappedValue.isEmpty {
+                    Text("Ther is nothing to show here")
+                        .foregroundColor(.secondary)
+                } else {
+                    List {
+                        ForEach(projects.wrappedValue) { project in
+                            Section(header: ProjectHeaderView(project: project)) {
+                                ForEach(project.projectItems(using: sortOrder)) { item in
+                                    ItemRowView(project: project, item: item)
+                                }
+                                .onDelete { offsets in
+                                    let allItems = project.projectItems(using: sortOrder)
 
-                            for offset in offsets {
-                                let item = allItems[offset]
-                                dataController.delete(item)
-                            }
+                                    for offset in offsets {
+                                        let item = allItems[offset]
+                                        dataController.delete(item)
+                                    }
 
-                            dataController.save()
-                        }
-                        
-                        if showClosedProjects == false {
-                            Button {
-                                withAnimation {
-                                    let item = Item(context: managedObjectContext)
-                                    item.project = project
-                                    item.creationDate = Date()
                                     dataController.save()
                                 }
-                            } label: {
-                                Label("Add New Item", systemImage: "plus")
+                                
+                                if showClosedProjects == false {
+                                    Button {
+                                        withAnimation {
+                                            let item = Item(context: managedObjectContext)
+                                            item.project = project
+                                            item.creationDate = Date()
+                                            dataController.save()
+                                        }
+                                    } label: {
+                                        Label("Add New Item", systemImage: "plus")
+                                    }
+                                }
                             }
                         }
                     }
+                    .listStyle(InsetGroupedListStyle())
                 }
             }
-            .listStyle(InsetGroupedListStyle())
             .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -94,6 +103,7 @@ struct ProjectsView: View {
                     .default(Text("Title")) { sortOrder = .title },
                 ])
             }
+            SelectSomethingView()
         }
     } //: BODY
 }
