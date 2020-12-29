@@ -17,6 +17,10 @@
 		1E4D118C25952B4300470FBA /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D118B25952B4300470FBA /* ProjectsView.swift */; };
 		1E4D118F25952B6400470FBA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D118E25952B6400470FBA /* DataController.swift */; };
 		1E4D119525952BC600470FBA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D119425952BC600470FBA /* CloudKit.framework */; };
+		1E7139D9259B181700807FE5 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7139D8259B181700807FE5 /* Bundle-Decodable.swift */; };
+		1E7139DC259B273400807FE5 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7139DB259B273400807FE5 /* Award.swift */; };
+		1E7139DF259B273F00807FE5 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7139DE259B273F00807FE5 /* AwardsView.swift */; };
+		1E7139E2259B28CE00807FE5 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E7139E1259B28CE00807FE5 /* Awards.json */; };
 		1ED3E392259600FE002039FC /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E391259600FE002039FC /* Item-CoreDataHelpers.swift */; };
 		1ED3E395259601B3002039FC /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E394259601B3002039FC /* Project-CoreDataHelpers.swift */; };
 		1ED3E39925971814002039FC /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3E39825971814002039FC /* EditItemView.swift */; };
@@ -42,6 +46,10 @@
 		1E4D118E25952B6400470FBA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1E4D119125952BBE00470FBA /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		1E4D119425952BC600470FBA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1E7139D8259B181700807FE5 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		1E7139DB259B273400807FE5 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		1E7139DE259B273F00807FE5 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		1E7139E1259B28CE00807FE5 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		1ED3E391259600FE002039FC /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		1ED3E394259601B3002039FC /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		1ED3E39825971814002039FC /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
@@ -94,12 +102,16 @@
 				1ED3E39B25971827002039FC /* ItemRowView.swift */,
 				1E4D118825952AEE00470FBA /* HomeView.swift */,
 				1E4D118B25952B4300470FBA /* ProjectsView.swift */,
+				1E7139DB259B273400807FE5 /* Award.swift */,
+				1E7139DE259B273F00807FE5 /* AwardsView.swift */,
+				1E7139D8259B181700807FE5 /* Bundle-Decodable.swift */,
 				1E3DB3BB259A239100C1A64C /* SelectSomethingView.swift */,
 				1ED3E3B02598C34C002039FC /* Sequence-Sorting.swift */,
 				1ED3E39E259726D5002039FC /* Binding-OnChange.swift */,
 				1E4D118E25952B6400470FBA /* DataController.swift */,
 				1ED3E391259600FE002039FC /* Item-CoreDataHelpers.swift */,
 				1ED3E394259601B3002039FC /* Project-CoreDataHelpers.swift */,
+				1E7139E1259B28CE00807FE5 /* Awards.json */,
 				1E145E95259528480005E567 /* Main.xcdatamodeld */,
 				1E145E892595282F0005E567 /* Assets.xcassets */,
 				1ED3E3A825974D00002039FC /* Colors.xcassets */,
@@ -183,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED3E3A925974D00002039FC /* Colors.xcassets in Resources */,
+				1E7139E2259B28CE00807FE5 /* Awards.json in Resources */,
 				1E145E8D2595282F0005E567 /* Preview Assets.xcassets in Resources */,
 				1E145E8A2595282F0005E567 /* Assets.xcassets in Resources */,
 			);
@@ -197,15 +210,18 @@
 			files = (
 				1E4D118C25952B4300470FBA /* ProjectsView.swift in Sources */,
 				1ED3E3A22597330B002039FC /* ProjectHeaderView.swift in Sources */,
+				1E7139DF259B273F00807FE5 /* AwardsView.swift in Sources */,
 				1E4D118F25952B6400470FBA /* DataController.swift in Sources */,
 				1ED3E395259601B3002039FC /* Project-CoreDataHelpers.swift in Sources */,
 				1ED3E3AC25974F03002039FC /* EditProjectView.swift in Sources */,
 				1E145E97259528480005E567 /* Main.xcdatamodeld in Sources */,
 				1E3DB3BC259A239100C1A64C /* SelectSomethingView.swift in Sources */,
+				1E7139DC259B273400807FE5 /* Award.swift in Sources */,
 				1ED3E39C25971827002039FC /* ItemRowView.swift in Sources */,
 				1E4D118925952AEE00470FBA /* HomeView.swift in Sources */,
 				1ED3E39F259726D5002039FC /* Binding-OnChange.swift in Sources */,
 				1ED3E3B12598C34C002039FC /* Sequence-Sorting.swift in Sources */,
+				1E7139D9259B181700807FE5 /* Bundle-Decodable.swift in Sources */,
 				1E145E882595282E0005E567 /* ContentView.swift in Sources */,
 				1E145E862595282E0005E567 /* UltimatePortfolioApp.swift in Sources */,
 				1ED3E392259600FE002039FC /* Item-CoreDataHelpers.swift in Sources */,
