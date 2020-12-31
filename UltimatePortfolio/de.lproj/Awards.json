@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Ersten Schritte",
+        "description": "Füge ein erstes Gegenstand hinzu.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 1,
+        "image": "figure.walk"
+    },
+    {
+        "name": "Ein guter Start",
+        "description": "10 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 10,
+        "image": "hand.thumbsup.fill"
+    },
+    {
+        "name": "Aufgestiegen",
+        "description": "20 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 20,
+        "image": "tray.and.arrow.up.fill"
+    },
+    {
+        "name": "An Geschwindigkeit gewonnen",
+        "description": "50 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 50,
+        "image": "speedometer"
+    },
+    {
+        "name": "Making Waves",
+        "description": "100 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 100,
+        "image": "dot.radiowaves.left.and.right"
+    },
+    {
+        "name": "Leistungsträger",
+        "description": "250 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 250,
+        "image": "square.stack.3d.up.fill"
+    },
+    {
+        "name": "Star Künstler",
+        "description": "500 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 500,
+        "image": "star.circle.fill"
+    },
+    {
+        "name": "Champion Künstler",
+        "description": "1000 Gegenstände hinzugefügt.",
+        "color": "Light Blue",
+        "criterion": "items",
+        "value": 1000,
+        "image": "crown.fill"
+    },
+    {
+        "name": "Kontrollkästchen",
+        "description": "Vervollständige deinen ersten Gegenstand.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 1,
+        "image": "checkmark.shield.fill"
+    },
+    {
+        "name": "Rock es",
+        "description": "Schließe 10 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 10,
+        "image": "guitars.fill"
+    },
+    {
+        "name": "20 ist genug",
+        "description": "Schließe 20 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 20,
+        "image": "20.square.fill"
+    },
+    {
+        "name": "Volltreffer!",
+        "description": "Schließe 50 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 50,
+        "image": "target"
+    },
+    {
+        "name": "Höhenflug",
+        "description": "Schließe 100 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 100,
+        "image": "airplane.circle.fill"
+    },
+    {
+        "name": "Du brennst!",
+        "description": "Schließe 250 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 250,
+        "image": "flame.fill"
+    },
+    {
+        "name": "Box Ticker in Chef",
+        "description": "Schließe 500 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 500,
+        "image": "text.badge.checkmark"
+    },
+    {
+        "name": "Boom!",
+        "description": "Schließe 1000 Gegenstände ab.",
+        "color": "Orange",
+        "criterion": "complete",
+        "value": 1000,
+        "image": "bolt.circle.fill"
+    },
+    {
+        "name": "Erste Nachricht",
+        "description": "Du hast Deine erste Nachricht im Gruppenchat gepostet.",
+        "color": "Purple",
+        "criterion": "chat",
+        "value": 1,
+        "image": "person.fill"
+    },
+    {
+        "name": "Frequentierter Schreiber",
+        "description": "Du hast 10 Nachrichten im Gruppenchat gepostet.",
+        "color": "Purple",
+        "criterion": "chat",
+        "value": 10,
+        "image": "message.fill"
+    },
+    {
+        "name": "Gemeinschafts Kraftpaket",
+        "description": "Du hast 100 Nachrichten im Gruppenchat gepostet.",
+        "color": "Purple",
+        "criterion": "chat",
+        "value": 100,
+        "image": "arrow.up.heart.fill"
+    },
+    {
+        "name": "Fan",
+        "description": "Du hast die Premium-Freischaltung gekauft.",
+        "color": "Green",
+        "criterion": "unlock",
+        "value": 0,
+        "image": "dollarsign.square.fill"
+    }
+]
