@@ -5,7 +5,7 @@
 //  Created by Berkant Dursun on 25.12.20.
 //
 
-import Foundation
+import SwiftUI
 
 extension Project {
     

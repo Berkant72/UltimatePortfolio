@@ -59,7 +59,7 @@ struct HomeView: View {
                                 .cornerRadius(10)
                                 .shadow(color: Color.black.opacity(0.2), radius: 5)
                             }
-                        } //: LAZYHGRID
+                        } //: GRID
                         .padding([.horizontal, .top])
                         .fixedSize(horizontal: false, vertical: true)
                     } //: SCROLLVIEW

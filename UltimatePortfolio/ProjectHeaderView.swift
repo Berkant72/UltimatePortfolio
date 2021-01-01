@@ -25,8 +25,8 @@ struct ProjectHeaderView: View {
                 Image(systemName: "square.and.pencil")
                     .imageScale(.large)
             }
-            
         }
+        .accessibilityElement(children: .combine)
     }
 }
 
