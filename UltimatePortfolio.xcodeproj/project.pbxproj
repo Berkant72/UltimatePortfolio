@@ -16,6 +16,8 @@
 		1E1F6228259E1B5C004D23B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E1F622A259E1B5C004D23B2 /* Localizable.strings */; };
 		1E1F622D259E1B6A004D23B2 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 1E1F622F259E1B6A004D23B2 /* Localizable.stringsdict */; };
 		1E1F6232259E1B7A004D23B2 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E1F6234259E1B7A004D23B2 /* Awards.json */; };
+		1E1F623D259F53A5004D23B2 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F623C259F53A5004D23B2 /* ItemListView.swift */; };
+		1E1F6240259F5490004D23B2 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1F623F259F5490004D23B2 /* ProjectSummaryView.swift */; };
 		1E3DB3BC259A239100C1A64C /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3DB3BB259A239100C1A64C /* SelectSomethingView.swift */; };
 		1E4D118925952AEE00470FBA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D118825952AEE00470FBA /* HomeView.swift */; };
 		1E4D118C25952B4300470FBA /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D118B25952B4300470FBA /* ProjectsView.swift */; };
@@ -53,6 +55,8 @@
 		1E1F6238259E1C80004D23B2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1E1F6239259E1C80004D23B2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = de; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		1E1F623A259E1C80004D23B2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Awards.json; sourceTree = "<group>"; };
+		1E1F623C259F53A5004D23B2 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		1E1F623F259F5490004D23B2 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		1E3DB3BB259A239100C1A64C /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		1E4D118825952AEE00470FBA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1E4D118B25952B4300470FBA /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -113,7 +117,9 @@
 				1ED3E3A12597330B002039FC /* ProjectHeaderView.swift */,
 				1ED3E39B25971827002039FC /* ItemRowView.swift */,
 				1E4D118825952AEE00470FBA /* HomeView.swift */,
+				1E1F623C259F53A5004D23B2 /* ItemListView.swift */,
 				1E4D118B25952B4300470FBA /* ProjectsView.swift */,
+				1E1F623F259F5490004D23B2 /* ProjectSummaryView.swift */,
 				1E7139DB259B273400807FE5 /* Award.swift */,
 				1E7139DE259B273F00807FE5 /* AwardsView.swift */,
 				1E1F621F259CA44B004D23B2 /* Color-Additions.swift */,
@@ -228,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E4D118C25952B4300470FBA /* ProjectsView.swift in Sources */,
+				1E1F6240259F5490004D23B2 /* ProjectSummaryView.swift in Sources */,
 				1ED3E3A22597330B002039FC /* ProjectHeaderView.swift in Sources */,
 				1E7139DF259B273F00807FE5 /* AwardsView.swift in Sources */,
 				1E4D118F25952B6400470FBA /* DataController.swift in Sources */,
@@ -242,6 +249,7 @@
 				1ED3E39F259726D5002039FC /* Binding-OnChange.swift in Sources */,
 				1ED3E3B12598C34C002039FC /* Sequence-Sorting.swift in Sources */,
 				1E7139D9259B181700807FE5 /* Bundle-Decodable.swift in Sources */,
+				1E1F623D259F53A5004D23B2 /* ItemListView.swift in Sources */,
 				1E145E882595282E0005E567 /* ContentView.swift in Sources */,
 				1E145E862595282E0005E567 /* UltimatePortfolioApp.swift in Sources */,
 				1ED3E392259600FE002039FC /* Item-CoreDataHelpers.swift in Sources */,
