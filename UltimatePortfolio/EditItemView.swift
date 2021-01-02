@@ -9,9 +9,9 @@ import SwiftUI
 
 struct EditItemView: View {
     let item: Item
-    
+
     @EnvironmentObject var dataController: DataController
-    
+
     @State private var title: String
     @State private var detail: String
     @State private var priority: Int
@@ -19,13 +19,13 @@ struct EditItemView: View {
 
     init(item: Item) {
         self.item = item
-        
+
         _title = State(wrappedValue: item.itemTitle)
         _detail = State(wrappedValue: item.itemDetail)
         _priority = State(wrappedValue: Int(item.priority))
         _completed = State(wrappedValue: item.completed)
     }
-    
+
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
@@ -49,10 +49,10 @@ struct EditItemView: View {
         .navigationTitle("Edit Item")
         .onDisappear(perform: dataController.save)
     }
-    
+
     func update() {
         item.project?.objectWillChange.send()
-        
+
         item.title = title
         item.detail = detail
         item.priority = Int16(priority)

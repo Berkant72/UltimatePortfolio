@@ -8,6 +8,7 @@
 import Foundation
 
 struct Award: Decodable, Identifiable {
+    // swiftlint:disable:next identifier_name
     var id: String { name }
     let name: String
     let description: String
