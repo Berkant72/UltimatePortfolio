@@ -81,7 +81,7 @@ struct ProjectsView: View {
             // For the secondary View with NavigationView a View at the end with text.
             Group {
                 if projects.wrappedValue.isEmpty {
-                    Text("Ther is nothing to show here")
+                    Text("There is nothing to show here")
                         .foregroundColor(.secondary)
                 } else {
                     projectsList
