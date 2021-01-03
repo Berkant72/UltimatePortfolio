@@ -24,6 +24,7 @@ struct HomeView: View {
         [GridItem(.fixed(100))]
     }
 
+    // Construct a fetch request to show the 10 highest-priority, incomplete items from open projects.
     init() {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         let completedPredicate = NSPredicate(format: "completed = false")
